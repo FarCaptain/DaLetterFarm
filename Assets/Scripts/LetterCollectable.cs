@@ -2,16 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using TMPro;
 
 public class LetterCollectable : MonoBehaviour
 {
     public char letter;
-    public UnityEvent OnClick;
     public WordPanel wordPanel;
 
-    private void OnMouseDown()
+    private void OnEnable()
     {
-        OnClick?.Invoke();
+        GetComponentInChildren<TextMeshProUGUI>().text = "" + letter;
+    }
+
+    public void OnClicked()
+    {
         wordPanel.AddLetter(letter);
         Destroy(gameObject, 0.2f);
     }
