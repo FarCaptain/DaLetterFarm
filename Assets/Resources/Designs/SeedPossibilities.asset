@@ -17,3 +17,51 @@ MonoBehaviour:
     chancePercentage: 8.17
   - name: B
     chancePercentage: 1.49
+  - name: C
+    chancePercentage: 2.78
+  - name: D
+    chancePercentage: 4.25
+  - name: E
+    chancePercentage: 12.7
+  - name: F
+    chancePercentage: 2.23
+  - name: G
+    chancePercentage: 2.02
+  - name: H
+    chancePercentage: 6.09
+  - name: I
+    chancePercentage: 6.97
+  - name: J
+    chancePercentage: 0.15
+  - name: K
+    chancePercentage: 0.77
+  - name: L
+    chancePercentage: 4.03
+  - name: M
+    chancePercentage: 2.41
+  - name: N
+    chancePercentage: 6.75
+  - name: O
+    chancePercentage: 7.51
+  - name: P
+    chancePercentage: 1.93
+  - name: Q
+    chancePercentage: 0.1
+  - name: R
+    chancePercentage: 5.99
+  - name: S
+    chancePercentage: 6.33
+  - name: T
+    chancePercentage: 9.06
+  - name: U
+    chancePercentage: 2.76
+  - name: V
+    chancePercentage: 0.98
+  - name: W
+    chancePercentage: 2.36
+  - name: X
+    chancePercentage: 0.15
+  - name: Y
+    chancePercentage: 1.97
+  - name: Z
+    chancePercentage: 0.07

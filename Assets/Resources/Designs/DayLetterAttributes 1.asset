@@ -21,3 +21,99 @@ MonoBehaviour:
     growTime: 4
     keepTime: 13
     durability: 87
+  - letter: 67
+    growTime: 3
+    keepTime: 9
+    durability: 55
+  - letter: 68
+    growTime: 3
+    keepTime: 9
+    durability: 39
+  - letter: 69
+    growTime: 2
+    keepTime: 5
+    durability: 12
+  - letter: 70
+    growTime: -1
+    keepTime: 0
+    durability: 0
+  - letter: 71
+    growTime: -1
+    keepTime: 0
+    durability: 0
+  - letter: 72
+    growTime: 3
+    keepTime: 9
+    durability: 28
+  - letter: 73
+    growTime: 3
+    keepTime: 9
+    durability: 24
+  - letter: 74
+    growTime: -1
+    keepTime: 0
+    durability: 0
+  - letter: 75
+    growTime: 5
+    keepTime: 16
+    durability: 132
+  - letter: 76
+    growTime: -1
+    keepTime: 0
+    durability: 0
+  - letter: 77
+    growTime: 4
+    keepTime: 13
+    durability: 62
+  - letter: 78
+    growTime: -1
+    keepTime: 0
+    durability: 0
+  - letter: 79
+    growTime: 3
+    keepTime: 9
+    durability: 22
+  - letter: 80
+    growTime: -1
+    keepTime: 0
+    durability: 0
+  - letter: 81
+    growTime: -1
+    keepTime: 0
+    durability: 0
+  - letter: 82
+    growTime: -1
+    keepTime: 0
+    durability: 0
+  - letter: 83
+    growTime: -1
+    keepTime: 0
+    durability: 0
+  - letter: 84
+    growTime: 2
+    keepTime: 5
+    durability: 18
+  - letter: 85
+    growTime: 3
+    keepTime: 9
+    durability: 55
+  - letter: 86
+    growTime: 4
+    keepTime: 13
+    durability: 114
+  - letter: 87
+    growTime: 4
+    keepTime: 13
+    durability: 63
+  - letter: 88
+    growTime: 6
+    keepTime: 20
+    durability: 304
+  - letter: 89
+    growTime: 4
+    keepTime: 13
+    durability: 72
+  - letter: 90
+    growTime: -1
+    keepTime: 0
+    durability: 0

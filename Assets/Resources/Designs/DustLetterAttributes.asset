@@ -14,10 +14,106 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attribSet:
   - letter: 65
-    growTime: 2
-    keepTime: 5
-    durability: 20
+    growTime: -1
+    keepTime: 0
+    durability: 0
   - letter: 66
+    growTime: -1
+    keepTime: 0
+    durability: 0
+  - letter: 67
+    growTime: -1
+    keepTime: 0
+    durability: 0
+  - letter: 68
+    growTime: -1
+    keepTime: 0
+    durability: 0
+  - letter: 69
+    growTime: -1
+    keepTime: 0
+    durability: 0
+  - letter: 70
+    growTime: 3
+    keepTime: 6
+    durability: 51
+  - letter: 71
+    growTime: 3
+    keepTime: 6
+    durability: 55
+  - letter: 72
+    growTime: -1
+    keepTime: 0
+    durability: 0
+  - letter: 73
+    growTime: -1
+    keepTime: 0
+    durability: 0
+  - letter: 74
+    growTime: 6
+    keepTime: 15
+    durability: 263
+  - letter: 75
+    growTime: -1
+    keepTime: 0
+    durability: 0
+  - letter: 76
+    growTime: 3
+    keepTime: 6
+    durability: 30
+  - letter: 77
+    growTime: -1
+    keepTime: 0
+    durability: 0
+  - letter: 78
+    growTime: 2
+    keepTime: 4
+    durability: 18
+  - letter: 79
+    growTime: -1
+    keepTime: 0
+    durability: 0
+  - letter: 80
     growTime: 4
-    keepTime: 13
-    durability: 87
+    keepTime: 9
+    durability: 57
+  - letter: 81
+    growTime: 6
+    keepTime: 15
+    durability: 316
+  - letter: 82
+    growTime: 2
+    keepTime: 4
+    durability: 20
+  - letter: 83
+    growTime: 2
+    keepTime: 4
+    durability: 19
+  - letter: 84
+    growTime: -1
+    keepTime: 0
+    durability: 0
+  - letter: 85
+    growTime: -1
+    keepTime: 0
+    durability: 0
+  - letter: 86
+    growTime: -1
+    keepTime: 0
+    durability: 0
+  - letter: 87
+    growTime: -1
+    keepTime: 0
+    durability: 0
+  - letter: 88
+    growTime: -1
+    keepTime: 0
+    durability: 0
+  - letter: 89
+    growTime: -1
+    keepTime: 0
+    durability: 0
+  - letter: 90
+    growTime: 7
+    keepTime: 17
+    durability: 369
