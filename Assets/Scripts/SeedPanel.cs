@@ -9,15 +9,23 @@ public class SeedPanel : MonoBehaviour
 
     private void Start()
     {
-        GeneratePanel();
+        UpdatePanel();
     }
 
-    private void GeneratePanel()
+    private void UpdatePanel()
     {
-        for (int i = 0; i < inventory.letters.Count; i++)
+        int seedNumber = transform.childCount;
+        int num = inventory.capacity - seedNumber;
+        for (int i = 0; i < num; i++)
         {
             var spawnedSeed = Instantiate(seedPrefab, transform);
-            spawnedSeed.Init(inventory.letters[i]);
+            char spawnedLetter = inventory.AddNewLetter();
+            spawnedSeed.Init(spawnedLetter);
         }
+    }
+
+    private void Update()
+    {
+        UpdatePanel();
     }
 }

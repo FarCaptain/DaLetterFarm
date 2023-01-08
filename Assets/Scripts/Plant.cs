@@ -10,6 +10,8 @@ public class Plant : MonoBehaviour
     [SerializeField] private LetterCollectable fruitPrefab;
     [SerializeField] private LetterAttributs attribs;
 
+    [SerializeField] private GridMap gridMap;
+
     private float spawnTime = 0f;
     private float accumulatedTime = 0f;
 
@@ -17,15 +19,15 @@ public class Plant : MonoBehaviour
     private float accTime = 0f;
 
     private int letterIndex;
+    // keep a tile reference
+    private Tile tile;
 
-    public void Init(int _index)
+    public void Init(int _index, Tile _tile)
     {
-        //renderer.sortingLayerName = "Crops";
-        //renderer.sortingOrder = _order;
-
         renderer.sprite = plantCollection.sprites[_index];
 
         letterIndex = _index;
+        tile = _tile;
 
         spawnTime = attribs.attribSet[letterIndex].growTime;
         durationTime = attribs.attribSet[letterIndex].durability;
@@ -44,6 +46,7 @@ public class Plant : MonoBehaviour
         if(accTime > durationTime)
         {
             accTime = 0;
+            gridMap.tiles[tile] = ' ';
             Destroy(gameObject, 0.01f);
         }
     }

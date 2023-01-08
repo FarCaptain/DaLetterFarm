@@ -16,6 +16,7 @@ public class LetterSeed : MonoBehaviour
     //empty plant prefab
     [SerializeField] private Plant plantPrefab;
     [SerializeField] private GridMap gridMap;
+    [SerializeField] private LetterInventory letterInventory;
 
     public void Init(char _letter)
     {
@@ -44,14 +45,15 @@ public class LetterSeed : MonoBehaviour
                 var pos = tile.transform.position;
                 var spawnedPlant = Instantiate(plantPrefab, pos, Quaternion.identity);
 
-                spawnedPlant.Init(idx);
+                spawnedPlant.Init(idx, tile);
 
                 gridMap.tiles[tile] = letter;
+
+                Debug.Log($"Planted {letter} !");
+                Destroy(gameObject);
                 return;
             }
         }
-
-        Debug.Log($"Planted {letter} !");
     }
 
     private int GetIndex()

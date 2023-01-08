@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef44d6c346a7ee543a253eb8cafc3b8c, type: 3}
   m_Name: LetterInventory
   m_EditorClassIdentifier: 
-  letters: 41004200430046004300
+  capacity: 8
+  seedPossibilities: {fileID: 11400000, guid: e475b2ed20c551740b8745c2de30494a, type: 2}
