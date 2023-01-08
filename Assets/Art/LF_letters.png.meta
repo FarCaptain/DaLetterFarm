@@ -1,0 +1,1336 @@
+fileFormatVersion: 2
+guid: 355ce60079206ba4cb9567e7a9f835bb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LF_letters_7
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1795
+        width: 197
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2395cc43f437a8941b0c2b3aef050e74
+      internalID: 1357840526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_8
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1796
+        width: 197
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab4d3c9933629c459981e13b0ebe871
+      internalID: 472755542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_9
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 1797
+        width: 197
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa3f62b8c9aecb41842ee88fd8abca8
+      internalID: -158477899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_10
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 1796
+        width: 197
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1f703bc48247e498a7abdc9d8020aa
+      internalID: 1634780773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_11
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 1797
+        width: 197
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 854e808a4d016734a8552f9b5103f9bd
+      internalID: -652404053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_12
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 1799
+        width: 197
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 298ff6c3b91c6b24bb15ec1fe0b8c0eb
+      internalID: -911417024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_13
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 1796
+        width: 197
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e00cf933512c48b4bbb3bbc3e7e40efe
+      internalID: -1309810126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_21
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1534
+        width: 197
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2650b42b9439b114682cca4af094bd86
+      internalID: 820068690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_22
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 1537
+        width: 197
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98de48eb3af8a0a41bae0b15fde066d3
+      internalID: -905268740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_23
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 1537
+        width: 197
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a24ba53d25010d4493d513c647355a1
+      internalID: 1474986606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_24
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 1536
+        width: 197
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7640fe74b2eb1e04e97492cacac52249
+      internalID: 940244698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_25
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 1538
+        width: 197
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b32bc087edd1824e8b00795decb1e97
+      internalID: 774398411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_26
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1537
+        width: 197
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d6cc32ed528a494e8818da6e4027333
+      internalID: 1246326657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_27
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 1537
+        width: 197
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9c2cbfc1776bc498ccee68c7b50cca
+      internalID: 393426589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_35
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1276
+        width: 197
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f90cddf60a299674b8e1025862908e77
+      internalID: 2103018442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_36
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 1279
+        width: 197
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 708fd5fd17ac0884dba2455c821d046c
+      internalID: 1460863035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_37
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 1279
+        width: 197
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57302655d00fca74b898a2697967de67
+      internalID: -978824436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_38
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 1279
+        width: 197
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc3490e037a908478836c546ef39f6e
+      internalID: 1102953200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_39
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 1279
+        width: 197
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d9456f5b3c52f43abf646dc0727dbc
+      internalID: 1156194429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_40
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 1280
+        width: 197
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5e696cc1208d8b44b19cca8033e8749
+      internalID: -1769618598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_41
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 1284
+        width: 197
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3dcec65f7a60a241b7e73a3e0b29138
+      internalID: -2128907616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_47
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1018
+        width: 197
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d876955e5f45618478799ca77d96a9bc
+      internalID: 119502712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_48
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 1023
+        width: 197
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705b47bd62b2dc0439dea651f1aad8d3
+      internalID: -946618275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_49
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 1023
+        width: 197
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148c3deac914a624783654e384b9da0b
+      internalID: -333549030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_50
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1021
+        width: 197
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5641d691919ad469118f29d285ac0b
+      internalID: -1713471332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_51
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 1021
+        width: 197
+        height: 199
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772a2de7efccfd04abfcf746665ce42b
+      internalID: -1696072791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_84
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 316
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db0f925569e0774f962c2cb80ee3b60
+      internalID: -503876376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_85
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 317
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954da4c1852587c4090892b765144f12
+      internalID: -1157360829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_86
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 317
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd442c0e29a9c8545a988b62cfe7f81a
+      internalID: -1655582284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_87
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 318
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e199880919794f74e9ff4126bf755f67
+      internalID: 1739894218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_88
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 317
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246cbd7158457c94f97ff61ac1b5a2c2
+      internalID: 1375236288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_89
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 316
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aed73de2cb3ae34faf330854d5999f2
+      internalID: -1779844324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_90
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 317
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e46d0d6ce5d13949ae72020c1017484
+      internalID: -509673966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_91
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 317
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8756d830a2eb55d458983b5ba1471d47
+      internalID: 1558849113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_92
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 319
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 999715a9512fa044cab7188e0afd447f
+      internalID: -1335738068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_93
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 318
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab41f847e02e334384f02128018b8ba
+      internalID: -1625455312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_94
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 316
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2bcefcb8fc1839459bfcefd41a300c0
+      internalID: 2047439708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_95
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 315
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557216e4280515647ab185d883fe51bd
+      internalID: 1531473640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_96
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 316
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04c769129765d8409bb6174ebbb9d41
+      internalID: -1994185648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_97
+      rect:
+        serializedVersion: 2
+        x: 1734
+        y: 317
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b20b977d8052c04d9aa146f448393c4
+      internalID: 1241536048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_98
+      rect:
+        serializedVersion: 2
+        x: 1862
+        y: 317
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b2b77ce9b1188418adac53bc4ff9c9
+      internalID: -1135794186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_99
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 189
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb33d2ee7d0f3884db426a5ca6fdd988
+      internalID: -1712283393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_100
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 188
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63e5da20ae4b604c97ab5979416dd56
+      internalID: -1370412618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_101
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 187
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243f31c8a030d6d4d9a1434fd7a4c120
+      internalID: 1891334356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_102
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 186
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258a9b7d4a0df8a498a4d34021e20bc7
+      internalID: 906985249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_103
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 187
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd35b9972257e044acb5b10cfcfe3b9
+      internalID: 866803399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_104
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 187
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc5b2a2c0e57cd498e4b9ba6af659f2
+      internalID: -561018066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_105
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 188
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 426c447bc39c59148883e52ed2e6155c
+      internalID: 776277101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_106
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 188
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d88b1001a0e9dc4aac7a269b7227db8
+      internalID: -1839021163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_107
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 189
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55ec00fd670d004f9c91c9879bf93d9
+      internalID: 72090983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_108
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 189
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c2de0b823868d14fa1d9726f743aa65
+      internalID: -1657318702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LF_letters_109
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 188
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5770989949ada4eae26f5247e655de
+      internalID: 1163065233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      LF_letters_22: -905268740
+      LF_letters_98: -1135794186
+      LF_letters_25: 774398411
+      LF_letters_31: -837859488
+      LF_letters_97: 1241536048
+      LF_letters_35: 2103018442
+      LF_letters_39: 1156194429
+      LF_letters_73: 400367042
+      LF_letters_47: 119502712
+      LF_letters_13: -1309810126
+      LF_letters_76: -990194801
+      LF_letters_16: -1369288580
+      LF_letters_87: 1739894218
+      LF_letters_23: 1474986606
+      LF_letters_66: 2083326576
+      LF_letters_74: 201713475
+      LF_letters_18: -521610103
+      LF_letters_21: 820068690
+      LF_letters_40: -1769618598
+      LF_letters_55: 2067619549
+      LF_letters_12: -911417024
+      LF_letters_92: -1335738068
+      LF_letters_15: -90664151
+      LF_letters_63: -795423448
+      LF_letters_24: 940244698
+      LF_letters_28: 1486553674
+      LF_letters_52: -1152235461
+      LF_letters_27: 393426589
+      LF_letters_94: 2047439708
+      LF_letters_100: -1370412618
+      LF_letters_36: 1460863035
+      LF_letters_78: 326256415
+      LF_letters_77: 739584054
+      LF_letters_53: 223783941
+      LF_letters_1: 1752241502
+      LF_letters_109: 1163065233
+      LF_letters_80: -1448912974
+      LF_letters_88: 1375236288
+      LF_letters_104: -561018066
+      LF_letters_2: 1018172374
+      LF_letters_46: 1226963040
+      LF_letters_89: -1779844324
+      LF_letters_60: 1850051138
+      LF_letters_48: -946618275
+      LF_letters_95: 1531473640
+      LF_letters_51: -1696072791
+      LF_letters_85: -1157360829
+      LF_letters_59: -907805696
+      LF_letters_57: 1430819097
+      LF_letters_37: -978824436
+      LF_letters_106: -1839021163
+      LF_letters_6: 225217692
+      LF_letters_29: -1160103151
+      LF_letters_81: 1613083363
+      LF_letters_0: -401057627
+      LF_letters_108: -1657318702
+      LF_letters_68: -1542474360
+      LF_letters_72: -85276890
+      LF_letters_50: -1713471332
+      LF_letters_69: 721898759
+      LF_letters_8: 472755542
+      LF_letters_9: -158477899
+      LF_letters_32: 842031131
+      LF_letters_99: -1712283393
+      LF_letters_34: -225516762
+      LF_letters_105: 776277101
+      LF_letters_14: -1421216438
+      LF_letters_64: 1977966102
+      LF_letters_41: -2128907616
+      LF_letters_91: 1558849113
+      LF_letters_44: -1674623529
+      LF_letters_79: 1637100739
+      LF_letters_61: -1534273841
+      LF_letters_43: -1064286560
+      LF_letters_82: 1332130785
+      LF_letters_49: -333549030
+      LF_letters_20: 586566410
+      LF_letters_70: 1408777607
+      LF_letters_75: 1951961567
+      LF_letters_103: 866803399
+      LF_letters_101: 1891334356
+      LF_letters_4: -126379735
+      LF_letters_84: -503876376
+      LF_letters_26: 1246326657
+      LF_letters_17: 1002468592
+      LF_letters_45: -165947616
+      LF_letters_54: 196026138
+      LF_letters_5: 1430679912
+      LF_letters_19: -1597071144
+      LF_letters_65: -1815769952
+      LF_letters_83: -1398625886
+      LF_letters_62: -1823222875
+      LF_letters_38: 1102953200
+      LF_letters_90: -509673966
+      LF_letters_42: -204844840
+      LF_letters_107: 72090983
+      LF_letters_86: -1655582284
+      LF_letters_58: -1200264497
+      LF_letters_71: 87051790
+      LF_letters_102: 906985249
+      LF_letters_67: -1382602071
+      LF_letters_96: -1994185648
+      LF_letters_33: -1548466666
+      LF_letters_3: -1330816377
+      LF_letters_7: 1357840526
+      LF_letters_56: 1068939478
+      LF_letters_10: 1634780773
+      LF_letters_11: -652404053
+      LF_letters_30: -1287284789
+      LF_letters_93: -1625455312
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
