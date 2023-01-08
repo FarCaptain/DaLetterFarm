@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c939d41fd358108499c4e1b2ffab7da9, type: 3}
-  m_Name: LetterAttributes
+  m_Name: DustLetterAttributes
   m_EditorClassIdentifier: 
   attribSet:
   - letter: 65
