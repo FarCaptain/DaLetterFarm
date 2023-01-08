@@ -20,8 +20,8 @@ public class Plant : MonoBehaviour
 
     public void Init(int _order, int _index)
     {
-        renderer.sortingLayerName = "Crops";
-        renderer.sortingOrder = _order;
+        //renderer.sortingLayerName = "Crops";
+        //renderer.sortingOrder = _order;
 
         renderer.sprite = plantCollection.sprites[_index];
 
