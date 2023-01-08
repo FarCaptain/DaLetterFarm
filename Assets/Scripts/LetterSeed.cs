@@ -44,7 +44,7 @@ public class LetterSeed : MonoBehaviour
                 var pos = tile.transform.position;
                 var spawnedPlant = Instantiate(plantPrefab, pos, Quaternion.identity);
 
-                spawnedPlant.Init(tile.order, idx);
+                spawnedPlant.Init(idx);
 
                 gridMap.tiles[tile] = letter;
                 return;

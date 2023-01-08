@@ -18,7 +18,7 @@ public class Plant : MonoBehaviour
 
     private int letterIndex;
 
-    public void Init(int _order, int _index)
+    public void Init(int _index)
     {
         //renderer.sortingLayerName = "Crops";
         //renderer.sortingOrder = _order;

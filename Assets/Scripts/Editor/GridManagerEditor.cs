@@ -8,7 +8,7 @@ public class GridManagerEditor : Editor
 {
     public override void OnInspectorGUI()
     {
-        base.OnInspectorGUI();
+        //base.OnInspectorGUI();
         var gridManager = target as GridManager;
 
         DrawDefaultInspector();

@@ -6,11 +6,12 @@ public class GridManager : MonoBehaviour
 {
     [SerializeField] private int width, height;
     [SerializeField] private Tile tilePrefab;
-    [SerializeField] private Transform cam;
 
     [SerializeField] private Transform gridGroup;
-
     [SerializeField] private GridMap gridMap;
+
+    // hard code
+    [SerializeField] private Vector2 tileSize = new Vector2(2.53f, 1.84f);
 
     private void Start()
     {
@@ -22,25 +23,21 @@ public class GridManager : MonoBehaviour
         ClearGrid();
         gridMap.tiles = new Dictionary<Tile, char>();
 
-        var tileSize = tilePrefab.transform.localScale;
-
         for (int x = 0; x < width; x++)
         {
             for (int y = 0; y < height; y++)
             {
-                var spawnedTile = Instantiate(tilePrefab, new Vector3(x * tileSize.x, y * tileSize.y), Quaternion.identity);
+                // spawn at a local position
+                var spawnedTile = Instantiate(tilePrefab, transform.position + new Vector3(x * tileSize.x, y * tileSize.y), Quaternion.identity, gridGroup);
                 spawnedTile.name = $"Tile {x} {y}";
 
                 bool isOffset = (x + y) % 2 == 1;
-                spawnedTile.Init(isOffset, 4 - y);
-                spawnedTile.transform.parent = gridGroup;
+                spawnedTile.Init(isOffset);
 
                 // space for empty tile
                 gridMap.tiles[spawnedTile] = ' ';
             }
         }
-
-        cam.position = new Vector3((float)(width - 1) * tileSize.x / 2, (float)(height - 1) * tileSize.y / 2, -10);
     }
 
     private void ClearGrid()
