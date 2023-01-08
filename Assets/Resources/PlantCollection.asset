@@ -13,4 +13,29 @@ MonoBehaviour:
   m_Name: PlantCollection
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 21300000, guid: 1f123a1e387f4814f94b6fc4ac562bb1, type: 3}
+  - {fileID: 1018172374, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
+  - {fileID: -1330816377, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
+  - {fileID: -126379735, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
+  - {fileID: 1430679912, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
+  - {fileID: 225217692, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
+  - {fileID: -1421216438, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
+  - {fileID: -90664151, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
+  - {fileID: -1369288580, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
+  - {fileID: 1002468592, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
+  - {fileID: -521610103, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
+  - {fileID: -1597071144, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
+  - {fileID: 586566410, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
+  - {fileID: 1486553674, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
+  - {fileID: -1160103151, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
+  - {fileID: -1287284789, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
+  - {fileID: -837859488, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
+  - {fileID: 842031131, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
+  - {fileID: -1548466666, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
+  - {fileID: -225516762, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
+  - {fileID: -204844840, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
+  - {fileID: -1064286560, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
+  - {fileID: -1674623529, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
+  - {fileID: -165947616, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
+  - {fileID: 1226963040, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
+  - {fileID: -1152235461, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
+  - {fileID: 223783941, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
