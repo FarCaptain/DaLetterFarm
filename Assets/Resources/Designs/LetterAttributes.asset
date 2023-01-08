@@ -9,7 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef44d6c346a7ee543a253eb8cafc3b8c, type: 3}
-  m_Name: LetterInventory
+  m_Script: {fileID: 11500000, guid: c939d41fd358108499c4e1b2ffab7da9, type: 3}
+  m_Name: LetterAttributes
   m_EditorClassIdentifier: 
-  letters: 41004200430046004300
+  attribSet:
+  - letter: 65
+    growTime: 2
+    keepTime: 5
+    durability: 20
+  - letter: 66
+    growTime: 4
+    keepTime: 13
+    durability: 87

@@ -5,29 +5,33 @@ using TMPro;
 
 public class WordPanel : MonoBehaviour
 {
-    private string currentWord;
+    [SerializeField] private CurrentWord currentWord;
     [SerializeField] private TextMeshProUGUI content;
     [SerializeField] private AlphabetDictionary dict;
 
-    public void AddLetter(char letter)
+    private void OnEnable()
     {
-        currentWord += letter;
-        content.text = currentWord;
+        currentWord.word = "";
     }
 
     public void CheckWord()
     {
-        bool isWord = dict.dictionary.TryGetValue(currentWord, out bool isChecked);
+        bool isWord = dict.dictionary.TryGetValue(currentWord.word, out bool isChecked);
         if (isWord && !isChecked)
         {
             Debug.Log(currentWord + "Yeah!");
-            dict.dictionary[currentWord] = true;
+            dict.dictionary[currentWord.word] = true;
         }
         else
         {
             Debug.Log(currentWord + "Nooooo");
         }
-        currentWord = "";
+        currentWord.word = "";
         content.text = "";
+    }
+
+    private void Update()
+    {
+        content.text = currentWord.word;
     }
 }

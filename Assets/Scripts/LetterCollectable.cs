@@ -7,16 +7,40 @@ using TMPro;
 public class LetterCollectable : MonoBehaviour
 {
     public char letter;
-    public WordPanel wordPanel;
+    [SerializeField] private CurrentWord currentWord;
+    [SerializeField] private FruitCollection fruitCollection;
+    [SerializeField] private new SpriteRenderer renderer;
 
-    private void OnEnable()
+    [SerializeField] private LetterAttributs attributs;
+    private float keepTime = 0;
+    private float accTime = 0;
+
+    public void Init(int _index)
     {
-        GetComponentInChildren<TextMeshProUGUI>().text = "" + letter;
+        letter = (char)('A' + _index);
+        renderer.sprite = fruitCollection.sprites[_index];
+
+        keepTime = attributs.attribSet[_index].keepTime;
     }
 
     public void OnClicked()
     {
-        wordPanel.AddLetter(letter);
+        currentWord.word += letter;
         Destroy(gameObject, 0.2f);
+    }
+
+    private void OnMouseDown()
+    {
+        OnClicked();
+    }
+
+    private void Update()
+    {
+        accTime += Time.deltaTime;
+        if(accTime > keepTime)
+        {
+            accTime = 0;
+            Destroy(gameObject);
+        }
     }
 }
