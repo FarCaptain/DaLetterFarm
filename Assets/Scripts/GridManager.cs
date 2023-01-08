@@ -10,17 +10,17 @@ public class GridManager : MonoBehaviour
 
     [SerializeField] private Transform gridGroup;
 
-    private Dictionary<Tile, char> tiles;
+    [SerializeField] private GridMap gridMap;
 
     private void Start()
     {
-        //GenerateGrid();
+        GenerateGrid();
     }
 
     public void GenerateGrid()
     {
         ClearGrid();
-        tiles = new Dictionary<Tile, char>();
+        gridMap.tiles = new Dictionary<Tile, char>();
 
         var tileSize = tilePrefab.transform.localScale;
 
@@ -36,7 +36,7 @@ public class GridManager : MonoBehaviour
                 spawnedTile.transform.parent = gridGroup;
 
                 // space for empty tile
-                tiles[spawnedTile] = ' ';
+                gridMap.tiles[spawnedTile] = ' ';
             }
         }
 
@@ -49,14 +49,5 @@ public class GridManager : MonoBehaviour
         {
             DestroyImmediate(gridGroup.GetChild(i).gameObject);
         }
-    }
-
-    public char GetLetterAtTile(Tile _tile)
-    {
-        if(tiles.TryGetValue(_tile, out var letter))
-        {
-            return letter;
-        }
-        return ' ';
     }
 }
