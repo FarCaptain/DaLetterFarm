@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class LetterSeed : MonoBehaviour
 {
     private char letter;
-    [SerializeField] private TextMeshProUGUI content;
+    //[SerializeField] private TextMeshProUGUI content;
     [SerializeField] private Image image;
 
     [SerializeField] private SeedCollection seeds;
@@ -20,7 +20,7 @@ public class LetterSeed : MonoBehaviour
     public void Init(char _letter)
     {
         letter = _letter;
-        content.text = "" + letter;
+        //content.text = "" + letter;
 
         int idx = GetIndex();
         if(idx != -1)
