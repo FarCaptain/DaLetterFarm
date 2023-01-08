@@ -73,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1440914783
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -503876376, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -102,7 +102,7 @@ MonoBehaviour:
   currentWord: {fileID: 11400000, guid: b547fa04dda35c340ba9a15408520a94, type: 2}
   fruitCollection: {fileID: 11400000, guid: 95b0c26884cb49b4c99f775f883d6388, type: 2}
   renderer: {fileID: 7007305640885726707}
-  attributs: {fileID: 11400000, guid: b308eff97daa09347b1ef6b107e88a74, type: 2}
+  attributs: {fileID: 11400000, guid: 9df52cf8c1c1d514f8d129fa0e696f30, type: 2}
 --- !u!58 &7007305640885726709
 CircleCollider2D:
   m_ObjectHideFlags: 0
