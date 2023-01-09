@@ -29,7 +29,6 @@ public class WordPanel : MonoBehaviour
 
     public void CheckWord()
     {
-        scoreRecord.ShowWord(currentWord.GetWord());
         bool isWord = dict.dictionary.TryGetValue(currentWord.GetWord(), out bool isChecked);
         if (isWord && !isChecked)
         {
@@ -43,6 +42,8 @@ public class WordPanel : MonoBehaviour
         {
             Debug.Log(currentWord + "Nooooo");
         }
+
+        scoreRecord.ShowWord(currentWord.GetWord(), isWord, isChecked);
         currentWord.SetWord("");
         content.text = "";
     }

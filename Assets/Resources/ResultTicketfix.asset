@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50eec211b665b6149bf25bd614170fac, type: 3}
+  m_Name: ResultTicketfix
+  m_EditorClassIdentifier: 
+  correctFixes:
+  - prefix: TURNS OUT
+    suffix: IS A WORD!
+  - prefix: 
+    suffix: IS A WORD!!!
+  - prefix: 
+    suffix: IS CORRECT!
+  - prefix: WOW
+    suffix: IS A WORD?
+  - prefix: 
+    suffix: IS A WORD!
+  wrongFixes:
+  - prefix: 
+    suffix: IS NOT A WORD!
+  - prefix: 
+    suffix: ISN'T A WORD!!!
+  - prefix: 
+    suffix: IS WRONG!
+  - prefix: NO,
+    suffix: IS WRONG!
+  - prefix: YOU THINK
+    suffix: IS A WORD?
+  repeatFixes:
+  - prefix: 
+    suffix: IS REPEATED!!!
+  - prefix: YOU'VE SAID
+    suffix: '!!'
+  - prefix: YOU'VE SAID
+    suffix: ALREADY!
+  - prefix: YOU'VE SAID
+    suffix: 
+  - prefix: 
+    suffix: IS REPEATED!

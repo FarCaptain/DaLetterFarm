@@ -6,8 +6,11 @@ using UnityEngine.UI;
 public class ScoreRecord : MonoBehaviour
 {
     [SerializeField] private Text scoreRecord;
-    [SerializeField] private Text letterHistory;
+    [SerializeField] private Text letterHistoryPrefab;
+    [SerializeField] private Transform letterHistoryParent;
     [SerializeField] private int capacity = 5;
+
+    [SerializeField] private ResultTicketfix fixes;
     private int wordCount = 0;
     private int score = 0;
 
@@ -38,14 +41,26 @@ public class ScoreRecord : MonoBehaviour
             score += 9;
     }
 
-    public void ShowWord(string _word)
+    public void ShowWord(string _word, bool _isWord, bool _isChecked)
     {
-        letterHistory.text += _word + "\n";
-        wordCount++;
+        var letterHistory = Instantiate(letterHistoryPrefab, letterHistoryParent);
 
-        //    if(wordCount > capacity)
-        //    {
-        //        letterHistory.text.Split()
-        //    }
+        LineFix fix;
+        if(!_isWord)
+        {
+            int index = Random.Range(0, fixes.wrongFixes.Count);
+            fix = fixes.wrongFixes[index];
+        }
+        else if(_isChecked)
+        {
+            int index = Random.Range(0, fixes.repeatFixes.Count);
+            fix = fixes.repeatFixes[index];
+        }
+        else
+        {
+            int index = Random.Range(0, fixes.correctFixes.Count);
+            fix = fixes.correctFixes[index];
+        }
+        letterHistory.text = fix.prefix + " " + _word + " " + fix.suffix;
     }
 }
