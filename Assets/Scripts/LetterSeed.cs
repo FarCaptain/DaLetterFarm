@@ -42,7 +42,7 @@ public class LetterSeed : MonoBehaviour
             if(entry.Value == ' ')
             {
                 var tile = entry.Key;
-                var pos = tile.transform.position;
+                var pos = tile.GetAnchoredPosition();
                 var spawnedPlant = Instantiate(plantPrefab, pos, Quaternion.identity);
 
                 spawnedPlant.Init(idx, tile);

@@ -13,7 +13,7 @@ public class Plant : MonoBehaviour
 
     [SerializeField] private GridMap gridMap;
 
-    // have to keep all four timers for four processes
+    // have to keep all remained timer for four processes
     [SerializeField] private Timer dayFruitSpawningTimer;
     [SerializeField] private Timer dayPlantDurationTimer;
     [SerializeField] private Timer duskFruitSpawningTimer;
@@ -34,7 +34,10 @@ public class Plant : MonoBehaviour
 
     public void Init(int _index, Tile _tile)
     {
-        renderer.sprite = plantCollection.sprites[_index];
+        // we want position and sprites, sort of a hack
+        var plantdata = plantCollection.spritePrefabs[_index];
+        renderer.sprite = plantdata.sprite;
+        transform.position = plantdata.transform.position;
 
         letterIndex = _index;
         tile = _tile;

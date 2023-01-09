@@ -10,6 +10,8 @@ public class GridManager : MonoBehaviour
     [SerializeField] private Transform gridGroup;
     [SerializeField] private GridMap gridMap;
 
+    [SerializeField] private Transform fieldAnchor;
+
     // hard code
     [SerializeField] private Vector2 tileSize = new Vector2(2.53f, 1.84f);
 
@@ -32,9 +34,9 @@ public class GridManager : MonoBehaviour
                 spawnedTile.name = $"Tile {x} {y}";
 
                 bool isOffset = (x + y) % 2 == 1;
-                spawnedTile.Init(isOffset);
+                spawnedTile.Init(isOffset, fieldAnchor);
 
-                // space for empty tile
+                // ' ' for empty tile
                 gridMap.tiles[spawnedTile] = ' ';
             }
         }

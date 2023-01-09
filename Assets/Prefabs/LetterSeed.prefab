@@ -149,6 +149,6 @@ MonoBehaviour:
   image: {fileID: 7174997605988609231}
   seeds: {fileID: 11400000, guid: 73141e45510474c43a102ec5313ab53d, type: 2}
   plants: {fileID: 11400000, guid: 783c3b77f8a6d304c9c0c4477d1b65bb, type: 2}
-  plantPrefab: {fileID: 6508299512827239135, guid: 8f11671601fe8034e8539dbdf3e79137, type: 3}
+  plantPrefab: {fileID: 7939290902406830212, guid: 7f5f2d1625c1014488161cfa2926be18, type: 3}
   gridMap: {fileID: 11400000, guid: a6f280922cd5d944e97601ef1e830592, type: 2}
   letterInventory: {fileID: 11400000, guid: 360bc142654d90b45a84cef984e442a1, type: 2}

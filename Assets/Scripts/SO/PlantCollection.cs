@@ -5,5 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "PlantCollection", menuName = "Sphinx/PlantCollection")]
 public class PlantCollection : ScriptableObject
 {
-    public List<Sprite> sprites;
+    // hacky, but where we end up
+    public List<SpriteRenderer> spritePrefabs;
 }
