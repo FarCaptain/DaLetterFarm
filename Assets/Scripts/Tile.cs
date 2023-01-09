@@ -14,8 +14,8 @@ public class Tile : MonoBehaviour
         tileAnchor = _anchor;
     }
 
-    public Vector3 GetAnchoredPosition()
+    public Transform GetAnchor()
     {
-        return transform.position + tileAnchor.position;
+        return tileAnchor;
     }
 }

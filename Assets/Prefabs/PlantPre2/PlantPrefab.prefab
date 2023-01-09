@@ -107,10 +107,10 @@ MonoBehaviour:
   dayAttribs: {fileID: 11400000, guid: 9df52cf8c1c1d514f8d129fa0e696f30, type: 2}
   duskAttribs: {fileID: 11400000, guid: b308eff97daa09347b1ef6b107e88a74, type: 2}
   gridMap: {fileID: 11400000, guid: a6f280922cd5d944e97601ef1e830592, type: 2}
-  dayFruitSpawningTimer: {fileID: -821334962980048292, guid: 8f11671601fe8034e8539dbdf3e79137, type: 3}
-  dayPlantDurationTimer: {fileID: -5989051930710942390, guid: 8f11671601fe8034e8539dbdf3e79137, type: 3}
-  duskFruitSpawningTimer: {fileID: 6295404541211646297, guid: 8f11671601fe8034e8539dbdf3e79137, type: 3}
-  duskPlantDurationTimer: {fileID: -3781545753512783815, guid: 8f11671601fe8034e8539dbdf3e79137, type: 3}
+  dayFruitSpawningTimer: {fileID: 1715733266527743754}
+  dayPlantDurationTimer: {fileID: 6214113204845769330}
+  duskFruitSpawningTimer: {fileID: 6040358703070233587}
+  duskPlantDurationTimer: {fileID: 956434151548943091}
   gameStates: {fileID: 11400000, guid: c1e23ef8e53eded449e6a0ae89202c0d, type: 2}
 --- !u!114 &1715733266527743754
 MonoBehaviour:

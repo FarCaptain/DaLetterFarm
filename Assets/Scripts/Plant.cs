@@ -37,7 +37,8 @@ public class Plant : MonoBehaviour
         // we want position and sprites, sort of a hack
         var plantdata = plantCollection.spritePrefabs[_index];
         renderer.sprite = plantdata.sprite;
-        transform.position = plantdata.transform.position;
+        transform.localPosition = plantdata.transform.position;
+        transform.localPosition += _tile.transform.localPosition;
 
         letterIndex = _index;
         tile = _tile;
