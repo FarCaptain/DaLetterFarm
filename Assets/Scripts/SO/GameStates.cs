@@ -5,12 +5,15 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "GameStates", menuName = "Sphinx/GameStates")]
 public class GameStates : ScriptableObject
 {
-    public GameTimeState timeState;
+    private GameTimeState timeState;
 
     private bool usingShovel = false;
 
     public delegate void ShovelStateDelegate();
     public event ShovelStateDelegate onShovelStateChanged;
+
+    public delegate void TimeStateDelegate();
+    public event ShovelStateDelegate onTimeStateChanged;
 
     public void SetShovelState(bool _state)
     {
@@ -22,6 +25,18 @@ public class GameStates : ScriptableObject
     }
 
     public bool GetShovelState() => usingShovel;
+
+
+    public void SetTimeState(GameTimeState _state)
+    {
+        if (_state == timeState)
+            return;
+
+        timeState = _state;
+        onTimeStateChanged?.Invoke();
+    }
+
+    public GameTimeState GetTimeState() => timeState;
 }
 
 public enum GameTimeState

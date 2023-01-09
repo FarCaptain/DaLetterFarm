@@ -46,6 +46,7 @@ public class DayNightCycle : MonoBehaviour
 
         nightLight.intensity = lightCurve.Evaluate(projectedAngle);
 
+        // init time state
         UpdateTimeState(angle);
     }
 
@@ -89,11 +90,11 @@ public class DayNightCycle : MonoBehaviour
         _angle = Mathf.Abs(_angle);
 
         if (_angle < duskAngle)
-            gameStates.timeState = GameTimeState.DAY;
+            gameStates.SetTimeState(GameTimeState.DAY);
         else if (_angle < nightAngle)
-            gameStates.timeState = GameTimeState.DUSK;
+            gameStates.SetTimeState(GameTimeState.DUSK);
         else
-            gameStates.timeState = GameTimeState.NIGHT;
+            gameStates.SetTimeState(GameTimeState.NIGHT);
 
         //Debug.Log($"[GameState] {gameStates.timeState} at {_angle}");
     }
