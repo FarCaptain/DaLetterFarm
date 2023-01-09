@@ -30,7 +30,7 @@ public class LetterCollectable : MonoBehaviour
 
     public void OnClicked()
     {
-        currentWord.word += letter;
+        currentWord.SetWord(currentWord.GetWord() + letter);
         Destroy(gameObject, 0.2f);
     }
 
