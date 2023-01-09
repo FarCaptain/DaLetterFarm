@@ -81,3 +81,9 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: shovel
+    clip: {fileID: 8300000, guid: 2a02dac032712254696bbc81210828ef, type: 3}
+    volume: 1.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}

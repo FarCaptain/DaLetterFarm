@@ -31,6 +31,7 @@ public class LetterCollectable : MonoBehaviour
     public void OnClicked()
     {
         currentWord.SetWord(currentWord.GetWord() + letter);
+        AudioManager.instance.Play("collectfruit");
         Destroy(gameObject);
     }
 

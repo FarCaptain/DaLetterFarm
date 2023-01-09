@@ -138,6 +138,7 @@ public class Plant : MonoBehaviour
     {
         if(gameStates.GetShovelState())
         {
+            AudioManager.instance.Play("shovel");
             Die();
         }
     }

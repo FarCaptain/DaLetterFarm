@@ -35,7 +35,7 @@ public class WordPanel : MonoBehaviour
         if (isWord && !isChecked)
         {
             Debug.Log(currentWord + "Yeah!");
-
+            AudioManager.instance.Play("right");
             int length = currentWord.GetWord().Length;
             scoreRecord.AddScore(length);
             dict.dictionary[currentWord.GetWord()] = true;
@@ -43,6 +43,7 @@ public class WordPanel : MonoBehaviour
         else
         {
             Debug.Log(currentWord + "Nooooo");
+            AudioManager.instance.Play("wrong");
         }
 
         scoreRecord.ShowWord(currentWord.GetWord(), isWord, isChecked);

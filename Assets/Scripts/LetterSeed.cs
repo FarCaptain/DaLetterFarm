@@ -36,6 +36,8 @@ public class LetterSeed : MonoBehaviour
         if (idx == -1)
             return;
 
+        AudioManager.instance.Play("selectseed");
+
         // find avalible position
         foreach (KeyValuePair<Tile, char> entry in gridMap.tiles)
         {
