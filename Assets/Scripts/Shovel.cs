@@ -33,5 +33,7 @@ public class Shovel : MonoBehaviour
             LetGoShovel();
         else
             UseShovel();
+
+        AudioManager.instance.Play("selectshovel");
     }
 }
