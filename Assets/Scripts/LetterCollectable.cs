@@ -12,6 +12,8 @@ public class LetterCollectable : MonoBehaviour
     [SerializeField] private new SpriteRenderer renderer;
 
     [SerializeField] private LetterAttributs attributs;
+    [SerializeField] private GameStates gameStates;
+
     private float keepTime = 0;
     private float accTime = 0;
 
@@ -31,7 +33,8 @@ public class LetterCollectable : MonoBehaviour
 
     private void OnMouseDown()
     {
-        OnClicked();
+        if(!gameStates.usingShovel)
+            OnClicked();
     }
 
     private void Update()

@@ -20,6 +20,9 @@ public class Plant : MonoBehaviour
     [SerializeField] private Timer duskPlantDurationTimer;
     [SerializeField] private GameStates gameStates;
 
+    [SerializeField] private Color warningColor;
+    private Color originalColor;
+
     private float daySpawnTime = 0f;
     private float dayDurationTime = 0f;
 
@@ -31,6 +34,11 @@ public class Plant : MonoBehaviour
     private Tile tile;
 
     private GameTimeState timeState = GameTimeState.EMPTY;
+
+    private void Start()
+    {
+        originalColor = renderer.color;
+    }
 
     public void Init(int _index, Tile _tile)
     {
@@ -118,5 +126,27 @@ public class Plant : MonoBehaviour
     {
         gridMap.tiles[tile] = ' ';
         Destroy(gameObject, 0.005f);
+    }
+
+    private void OnMouseEnter()
+    {
+        if(gameStates.usingShovel)
+        {
+            originalColor = renderer.color;
+            renderer.color = warningColor;
+        }
+    }
+
+    private void OnMouseExit()
+    {
+        renderer.color = originalColor;
+    }
+
+    private void OnMouseDown()
+    {
+        if(gameStates.usingShovel)
+        {
+            Die();
+        }
     }
 }

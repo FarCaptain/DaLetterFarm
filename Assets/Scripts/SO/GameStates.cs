@@ -6,7 +6,7 @@ using UnityEngine;
 public class GameStates : ScriptableObject
 {
     public GameTimeState timeState;
-    public bool useShovel = false;
+    public bool usingShovel = false;
 }
 
 public enum GameTimeState

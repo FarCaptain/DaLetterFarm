@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6214113204845769330}
   - component: {fileID: 6040358703070233587}
   - component: {fileID: 956434151548943091}
+  - component: {fileID: -6542496647061927053}
   m_Layer: 0
   m_Name: PlantPrefab
   m_TagString: Untagged
@@ -75,8 +76,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 715452875
-  m_SortingLayer: 2
+  m_SortingLayerID: 1758772763
+  m_SortingLayer: 4
   m_SortingOrder: 4
   m_Sprite: {fileID: 223783941, guid: 355ce60079206ba4cb9567e7a9f835bb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -112,6 +113,7 @@ MonoBehaviour:
   duskFruitSpawningTimer: {fileID: 6040358703070233587}
   duskPlantDurationTimer: {fileID: 956434151548943091}
   gameStates: {fileID: 11400000, guid: c1e23ef8e53eded449e6a0ae89202c0d, type: 2}
+  warningColor: {r: 0.98039216, g: 0.99215686, b: 0.61960787, a: 0.6117647}
 --- !u!114 &1715733266527743754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,3 +226,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &-6542496647061927053
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861722305216845172}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2290871, y: 1.196888, z: 0.2}
+  m_Center: {x: -0.07726142, y: -0.030497909, z: 0}
