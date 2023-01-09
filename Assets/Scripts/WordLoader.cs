@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using System.Text.RegularExpressions;
 
 public class WordLoader : MonoBehaviour
 {
     public AlphabetDictionary alphabetDictionary;
     private Dictionary<string, bool> dict;
+
+    [SerializeField] private TextAsset file;
     private void Start()
     {
         InitDictionary();
@@ -31,11 +34,13 @@ public class WordLoader : MonoBehaviour
 
     private void InitDictionary()
     {
-        StreamReader sr = new StreamReader("Assets/Resources/words_alpha.txt");
-        while (!sr.EndOfStream)
+        // keep the asset after build and adopt to all plateforms
+        var lines = Regex.Split(file.text, "\r\n|\r|\n");
+
+        foreach (var line in lines)
         {
-            string word = sr.ReadLine();
-            alphabetDictionary.dictionary.Add(word.ToUpper(), false);
+            Debug.Log(line);
+            alphabetDictionary.dictionary.Add(line.ToUpper(), false);
         }
     }
 }

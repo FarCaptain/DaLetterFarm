@@ -2770,6 +2770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alphabetDictionary: {fileID: 11400000, guid: 13bd601847feaa04bb8df0a44b645427, type: 2}
+  file: {fileID: 4900000, guid: 1940b80c77a596847b6b9ac6f404ceda, type: 3}
 --- !u!4 &640812386
 Transform:
   m_ObjectHideFlags: 0
