@@ -29,6 +29,8 @@ public class WordPanel : MonoBehaviour
 
     public void CheckWord()
     {
+        if (currentWord.GetWord() == "")
+            return;
         bool isWord = dict.dictionary.TryGetValue(currentWord.GetWord(), out bool isChecked);
         if (isWord && !isChecked)
         {
