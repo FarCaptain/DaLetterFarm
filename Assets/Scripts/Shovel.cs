@@ -12,24 +12,24 @@ public class Shovel : MonoBehaviour
 
     private void Awake()
     {
-        states.usingShovel = false;
+        states.SetShovelState(false);
     }
 
     public void UseShovel()
     {
-        states.usingShovel = true;
+        states.SetShovelState(true);
         blockPanel.SetActive(true);
     }
 
     public void LetGoShovel()
     {
-        states.usingShovel = false;
+        states.SetShovelState(false);
         blockPanel.SetActive(false);
     }
 
     public void ToggleShovel()
     {
-        if (states.usingShovel)
+        if (states.GetShovelState())
             LetGoShovel();
         else
             UseShovel();

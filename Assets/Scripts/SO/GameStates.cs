@@ -6,7 +6,22 @@ using UnityEngine;
 public class GameStates : ScriptableObject
 {
     public GameTimeState timeState;
-    public bool usingShovel = false;
+
+    private bool usingShovel = false;
+
+    public delegate void ShovelStateDelegate();
+    public event ShovelStateDelegate onShovelStateChanged;
+
+    public void SetShovelState(bool _state)
+    {
+        if (_state == usingShovel)
+            return;
+
+        usingShovel = _state;
+        onShovelStateChanged?.Invoke();
+    }
+
+    public bool GetShovelState() => usingShovel;
 }
 
 public enum GameTimeState

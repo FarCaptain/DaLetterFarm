@@ -35,6 +35,16 @@ public class Plant : MonoBehaviour
 
     private GameTimeState timeState = GameTimeState.EMPTY;
 
+    private void OnEnable()
+    {
+        gameStates.onShovelStateChanged += UpdateShovelState;
+    }
+
+    private void OnDisable()
+    {
+        gameStates.onShovelStateChanged -= UpdateShovelState;
+    }
+
     private void Start()
     {
         originalColor = renderer.color;
@@ -59,15 +69,15 @@ public class Plant : MonoBehaviour
 
         timeState = GameTimeState.EMPTY;
         InitTimers();
-        UpdateStates();
+        UpdateTimeStates();
     }
 
     private void Update()
     {
-        UpdateStates();
+        UpdateTimeStates();
     }
 
-    private void UpdateStates()
+    private void UpdateTimeStates()
     {
         if (timeState == gameStates.timeState)
             return;
@@ -94,6 +104,18 @@ public class Plant : MonoBehaviour
             default:
                 Debug.LogError("undefined gamestate");
                 break;
+        }
+    }
+
+    private void UpdateShovelState()
+    {
+        if(gameStates.GetShovelState())
+        {
+            renderer.sortingLayerName = "Front";
+        }
+        else
+        {
+            renderer.sortingLayerName = "Crops";
         }
     }
 
@@ -130,7 +152,7 @@ public class Plant : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        if(gameStates.usingShovel)
+        if(gameStates.GetShovelState())
         {
             originalColor = renderer.color;
             renderer.color = warningColor;
@@ -144,7 +166,7 @@ public class Plant : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(gameStates.usingShovel)
+        if(gameStates.GetShovelState())
         {
             Die();
         }

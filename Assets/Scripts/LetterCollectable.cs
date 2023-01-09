@@ -33,7 +33,7 @@ public class LetterCollectable : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(!gameStates.usingShovel)
+        if(!gameStates.GetShovelState())
             OnClicked();
     }
 
