@@ -6,6 +6,7 @@ using UnityEngine;
 public class LetterAttrib
 {
     public char letter;
+    public GameTimeState growState;
     public float growTime;
     public float keepTime;
     public float durability;

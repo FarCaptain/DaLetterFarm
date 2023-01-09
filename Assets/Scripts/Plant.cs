@@ -8,41 +8,35 @@ public class Plant : MonoBehaviour
     [SerializeField] private PlantCollection plantCollection;
 
     [SerializeField] private LetterCollectable fruitPrefab;
-    [SerializeField] private LetterAttributs dayAttribs;
-    [SerializeField] private LetterAttributs duskAttribs;
+    [SerializeField] private LetterAttributs attribs;
 
     [SerializeField] private GridMap gridMap;
 
     // have to keep all remained timer for four processes
-    [SerializeField] private Timer dayFruitSpawningTimer;
-    [SerializeField] private Timer dayPlantDurationTimer;
-    [SerializeField] private Timer duskFruitSpawningTimer;
-    [SerializeField] private Timer duskPlantDurationTimer;
+    [SerializeField] private Timer fruitSpawningTimer;
+    [SerializeField] private Timer plantDurationTimer;
     [SerializeField] private GameStates gameStates;
 
     [SerializeField] private Color warningColor;
     private Color originalColor;
 
-    private float daySpawnTime = 0f;
-    private float dayDurationTime = 0f;
-
-    private float duskSpawnTime = 0f;
-    private float duskDurationTime = 0f;
+    //in what state the plant grow
+    private GameTimeState growingState = GameTimeState.DAY;
 
     private int letterIndex;
     // keep a tile reference
     private Tile tile;
 
-    private GameTimeState timeState = GameTimeState.EMPTY;
-
     private void OnEnable()
     {
         gameStates.onShovelStateChanged += UpdateShovelState;
+        gameStates.onTimeStateChanged += UpdateTimeStates;
     }
 
     private void OnDisable()
     {
         gameStates.onShovelStateChanged -= UpdateShovelState;
+        gameStates.onTimeStateChanged -= UpdateTimeStates;
     }
 
     private void Start()
@@ -61,50 +55,24 @@ public class Plant : MonoBehaviour
         letterIndex = _index;
         tile = _tile;
 
-        daySpawnTime = dayAttribs.attribSet[letterIndex].growTime;
-        dayDurationTime = dayAttribs.attribSet[letterIndex].durability;
+        growingState = attribs.attribSet[letterIndex].growState;
+        float spawnTime = attribs.attribSet[letterIndex].growTime;
+        float durationTime = attribs.attribSet[letterIndex].durability;
 
-        duskSpawnTime = duskAttribs.attribSet[letterIndex].growTime;
-        duskDurationTime = duskAttribs.attribSet[letterIndex].durability;
-
-        timeState = GameTimeState.EMPTY;
-        InitTimers();
-        UpdateTimeStates();
-    }
-
-    private void Update()
-    {
-        UpdateTimeStates();
+        InitTimers(spawnTime, durationTime);
     }
 
     private void UpdateTimeStates()
     {
-        if (timeState == gameStates.timeState)
-            return;
-
-        timeState = gameStates.timeState;
+        // garenteed different
         StopAllTimers();
-        switch (timeState)
+        var globalState = gameStates.GetTimeState();
+        if (globalState == growingState)
         {
-            case GameTimeState.DAY:
-                if (daySpawnTime == -1) break;
-                dayFruitSpawningTimer.StartTimer();
-                dayPlantDurationTimer.StartTimer();
-                break;
-            case GameTimeState.DUSK:
-                if (duskSpawnTime == -1) break;
-                duskFruitSpawningTimer.StartTimer();
-                duskPlantDurationTimer.StartTimer();
-                break;
-            case GameTimeState.NIGHT:
-                break;
-            case GameTimeState.EMPTY:
-                Debug.LogError("undefined gamestate");
-                break;
-            default:
-                Debug.LogError("undefined gamestate");
-                break;
+            fruitSpawningTimer.StartTimer();
+            plantDurationTimer.StartTimer();
         }
+        // else stop
     }
 
     private void UpdateShovelState()
@@ -119,21 +87,23 @@ public class Plant : MonoBehaviour
         }
     }
 
-    private void InitTimers()
+    private void InitTimers(float _spawnTime, float _durationTime)
     {
-        dayFruitSpawningTimer.ResetTimer(daySpawnTime, false);
-        dayPlantDurationTimer.ResetTimer(dayDurationTime, false);
+        fruitSpawningTimer.ResetTimer(_spawnTime, false);
+        plantDurationTimer.ResetTimer(_durationTime, false);
 
-        duskFruitSpawningTimer.ResetTimer(duskSpawnTime, false);
-        duskPlantDurationTimer.ResetTimer(duskDurationTime, false);
+        var globalState = gameStates.GetTimeState();
+        if (globalState == growingState)
+        {
+            fruitSpawningTimer.StartTimer();
+            plantDurationTimer.StartTimer();
+        }
     }
 
     private void StopAllTimers()
     {
-        dayFruitSpawningTimer.StopTimer();
-        dayPlantDurationTimer.StopTimer();
-        duskFruitSpawningTimer.StopTimer();
-        duskPlantDurationTimer.StopTimer();
+        fruitSpawningTimer.StopTimer();
+        plantDurationTimer.StopTimer();
     }
 
     public void SpawnFruit()

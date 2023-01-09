@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.Events;
 using TMPro;
 
+/// <summary>
+/// Fruit
+/// </summary>
 public class LetterCollectable : MonoBehaviour
 {
     public char letter;
@@ -11,18 +14,18 @@ public class LetterCollectable : MonoBehaviour
     [SerializeField] private FruitCollection fruitCollection;
     [SerializeField] private new SpriteRenderer renderer;
 
-    [SerializeField] private LetterAttributs attributs;
+    [SerializeField] private LetterAttributs attribs;
     [SerializeField] private GameStates gameStates;
 
-    private float keepTime = 0;
-    private float accTime = 0;
+    [SerializeField] private Timer keepTimer;
 
     public void Init(int _index)
     {
         letter = (char)('A' + _index);
         renderer.sprite = fruitCollection.sprites[_index];
 
-        keepTime = attributs.attribSet[_index].keepTime;
+        float keepTime = attribs.attribSet[_index].keepTime;
+        keepTimer.ResetTimer(keepTime, true);
     }
 
     public void OnClicked()
@@ -37,13 +40,8 @@ public class LetterCollectable : MonoBehaviour
             OnClicked();
     }
 
-    private void Update()
+    public void Die()
     {
-        accTime += Time.deltaTime;
-        if(accTime > keepTime)
-        {
-            accTime = 0;
-            Destroy(gameObject);
-        }
+        Destroy(gameObject);
     }
 }

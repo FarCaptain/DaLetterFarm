@@ -10,110 +10,136 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c939d41fd358108499c4e1b2ffab7da9, type: 3}
-  m_Name: DayLetterAttributes
+  m_Name: LetterAttributes
   m_EditorClassIdentifier: 
   attribSet:
   - letter: 65
+    growState: 0
     growTime: 2
     keepTime: 5
     durability: 20
   - letter: 66
+    growState: 0
     growTime: 4
     keepTime: 13
     durability: 87
   - letter: 67
+    growState: 0
     growTime: 3
     keepTime: 9
     durability: 55
   - letter: 68
+    growState: 0
     growTime: 3
     keepTime: 9
     durability: 39
   - letter: 69
+    growState: 0
     growTime: 2
     keepTime: 5
     durability: 12
   - letter: 70
+    growState: 0
     growTime: -1
     keepTime: 0
     durability: 0
   - letter: 71
+    growState: 0
     growTime: -1
     keepTime: 0
     durability: 0
   - letter: 72
+    growState: 0
     growTime: 3
     keepTime: 9
     durability: 28
   - letter: 73
+    growState: 0
     growTime: 3
     keepTime: 9
     durability: 24
   - letter: 74
+    growState: 0
     growTime: -1
     keepTime: 0
     durability: 0
   - letter: 75
+    growState: 0
     growTime: 5
     keepTime: 16
     durability: 132
   - letter: 76
+    growState: 0
     growTime: -1
     keepTime: 0
     durability: 0
   - letter: 77
+    growState: 0
     growTime: 4
     keepTime: 13
     durability: 62
   - letter: 78
+    growState: 0
     growTime: -1
     keepTime: 0
     durability: 0
   - letter: 79
+    growState: 0
     growTime: 3
     keepTime: 9
     durability: 22
   - letter: 80
+    growState: 0
     growTime: -1
     keepTime: 0
     durability: 0
   - letter: 81
+    growState: 0
     growTime: -1
     keepTime: 0
     durability: 0
   - letter: 82
+    growState: 0
     growTime: -1
     keepTime: 0
     durability: 0
   - letter: 83
+    growState: 0
     growTime: -1
     keepTime: 0
     durability: 0
   - letter: 84
+    growState: 0
     growTime: 2
     keepTime: 5
     durability: 18
   - letter: 85
+    growState: 0
     growTime: 3
     keepTime: 9
     durability: 55
   - letter: 86
+    growState: 0
     growTime: 4
     keepTime: 13
     durability: 114
   - letter: 87
+    growState: 0
     growTime: 4
     keepTime: 13
     durability: 63
   - letter: 88
+    growState: 0
     growTime: 6
     keepTime: 20
     durability: 304
   - letter: 89
+    growState: 0
     growTime: 4
     keepTime: 13
     durability: 72
   - letter: 90
+    growState: 0
     growTime: -1
     keepTime: 0
     durability: 0
