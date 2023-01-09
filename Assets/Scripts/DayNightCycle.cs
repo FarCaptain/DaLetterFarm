@@ -12,10 +12,12 @@ public class DayNightCycle : MonoBehaviour
 
     [SerializeField] private float startDelay = 2f;
 
-    // 360 -> 210,100,50
+    [SerializeField] private GameStates gameStates;
+
+    // 360 -> 210,100,50 absolute value
     private float dayAngle = 0f;
-    private float duskAngle = -210f;
-    private float nightAngle = -310f;
+    private float duskAngle = 210f;
+    private float nightAngle = 310f;
 
     [SerializeField] private Volume volume;
     // project range to 0 ~ 360 -> 0 ~3.6 to make life easier
@@ -43,6 +45,8 @@ public class DayNightCycle : MonoBehaviour
         volume.weight = 1f - ligthIntensity;
 
         nightLight.intensity = lightCurve.Evaluate(projectedAngle);
+
+        UpdateTimeState(angle);
     }
 
 
@@ -75,6 +79,23 @@ public class DayNightCycle : MonoBehaviour
         volume.weight = 1f - ligthIntensity;
 
         nightLight.intensity = lightCurve.Evaluate(projectedAngle);
+        //Debug.Log($"[Angles] {angle} => {projectedAngle}");
+
+        UpdateTimeState(angle);
+    }
+
+    private void UpdateTimeState(float _angle)
+    {
+        _angle = Mathf.Abs(_angle);
+
+        if (_angle < duskAngle)
+            gameStates.timeState = GameTimeState.DAY;
+        else if (_angle < nightAngle)
+            gameStates.timeState = GameTimeState.DUSK;
+        else
+            gameStates.timeState = GameTimeState.NIGHT;
+
+        //Debug.Log($"[GameState] {gameStates.timeState} at {_angle}");
     }
 
     private void OnValidate()

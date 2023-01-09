@@ -12,6 +12,10 @@ GameObject:
   - component: {fileID: 1697672914460279484}
   - component: {fileID: 1697672914460279487}
   - component: {fileID: 6508299512827239135}
+  - component: {fileID: -821334962980048292}
+  - component: {fileID: -5989051930710942390}
+  - component: {fileID: 6295404541211646297}
+  - component: {fileID: -3781545753512783815}
   m_Layer: 0
   m_Name: Plant
   m_TagString: Untagged
@@ -114,5 +118,123 @@ MonoBehaviour:
   renderer: {fileID: 1697672914460279484}
   plantCollection: {fileID: 11400000, guid: 783c3b77f8a6d304c9c0c4477d1b65bb, type: 2}
   fruitPrefab: {fileID: 7007305640885726710, guid: 4264b0a761b3689409058e2d2a7d8c49, type: 3}
-  attribs: {fileID: 11400000, guid: 9df52cf8c1c1d514f8d129fa0e696f30, type: 2}
+  dayAttribs: {fileID: 11400000, guid: 9df52cf8c1c1d514f8d129fa0e696f30, type: 2}
+  duskAttribs: {fileID: 11400000, guid: b308eff97daa09347b1ef6b107e88a74, type: 2}
   gridMap: {fileID: 11400000, guid: a6f280922cd5d944e97601ef1e830592, type: 2}
+  dayFruitSpawningTimer: {fileID: -821334962980048292}
+  dayPlantDurationTimer: {fileID: -5989051930710942390}
+  duskFruitSpawningTimer: {fileID: 6295404541211646297}
+  duskPlantDurationTimer: {fileID: -3781545753512783815}
+  gameStates: {fileID: 11400000, guid: c1e23ef8e53eded449e6a0ae89202c0d, type: 2}
+--- !u!114 &-821334962980048292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697672914460279475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19bee14335052c448f7188d32e2d1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerName: DaySpawnFruit
+  OnTimeUp:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6508299512827239135}
+        m_TargetAssemblyTypeName: Plant, Assembly-CSharp
+        m_MethodName: SpawnFruit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-5989051930710942390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697672914460279475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19bee14335052c448f7188d32e2d1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerName: DayPlantDuration
+  OnTimeUp:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6508299512827239135}
+        m_TargetAssemblyTypeName: Plant, Assembly-CSharp
+        m_MethodName: Die
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6295404541211646297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697672914460279475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19bee14335052c448f7188d32e2d1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerName: DuskSpawnFruit
+  OnTimeUp:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6508299512827239135}
+        m_TargetAssemblyTypeName: Plant, Assembly-CSharp
+        m_MethodName: SpawnFruit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-3781545753512783815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697672914460279475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f19bee14335052c448f7188d32e2d1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerName: DuskPlantDuration
+  OnTimeUp:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6508299512827239135}
+        m_TargetAssemblyTypeName: Plant, Assembly-CSharp
+        m_MethodName: Die
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

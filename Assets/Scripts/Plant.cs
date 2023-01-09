@@ -8,19 +8,29 @@ public class Plant : MonoBehaviour
     [SerializeField] private PlantCollection plantCollection;
 
     [SerializeField] private LetterCollectable fruitPrefab;
-    [SerializeField] private LetterAttributs attribs;
+    [SerializeField] private LetterAttributs dayAttribs;
+    [SerializeField] private LetterAttributs duskAttribs;
 
     [SerializeField] private GridMap gridMap;
 
-    private float spawnTime = 0f;
-    private float accumulatedTime = 0f;
+    // have to keep all four timers for four processes
+    [SerializeField] private Timer dayFruitSpawningTimer;
+    [SerializeField] private Timer dayPlantDurationTimer;
+    [SerializeField] private Timer duskFruitSpawningTimer;
+    [SerializeField] private Timer duskPlantDurationTimer;
+    [SerializeField] private GameStates gameStates;
 
-    private float durationTime = 0f;
-    private float accTime = 0f;
+    private float daySpawnTime = 0f;
+    private float dayDurationTime = 0f;
+
+    private float duskSpawnTime = 0f;
+    private float duskDurationTime = 0f;
 
     private int letterIndex;
     // keep a tile reference
     private Tile tile;
+
+    private GameTimeState timeState = GameTimeState.EMPTY;
 
     public void Init(int _index, Tile _tile)
     {
@@ -29,33 +39,80 @@ public class Plant : MonoBehaviour
         letterIndex = _index;
         tile = _tile;
 
-        spawnTime = attribs.attribSet[letterIndex].growTime;
-        durationTime = attribs.attribSet[letterIndex].durability;
+        daySpawnTime = dayAttribs.attribSet[letterIndex].growTime;
+        dayDurationTime = dayAttribs.attribSet[letterIndex].durability;
+
+        duskSpawnTime = duskAttribs.attribSet[letterIndex].growTime;
+        duskDurationTime = duskAttribs.attribSet[letterIndex].durability;
+
+        timeState = GameTimeState.EMPTY;
+        InitTimers();
+        UpdateStates();
     }
 
     private void Update()
     {
-        accumulatedTime += Time.deltaTime;
-        if (accumulatedTime > spawnTime)
-        {
-            accumulatedTime = 0;
-            SpawnFruit();
-        }
+        UpdateStates();
+    }
 
-        accTime += Time.deltaTime;
-        if(accTime > durationTime)
+    private void UpdateStates()
+    {
+        if (timeState == gameStates.timeState)
+            return;
+
+        timeState = gameStates.timeState;
+        StopAllTimers();
+        switch (timeState)
         {
-            accTime = 0;
-            gridMap.tiles[tile] = ' ';
-            Destroy(gameObject, 0.01f);
+            case GameTimeState.DAY:
+                if (daySpawnTime == -1) break;
+                dayFruitSpawningTimer.StartTimer();
+                dayPlantDurationTimer.StartTimer();
+                break;
+            case GameTimeState.DUSK:
+                if (duskSpawnTime == -1) break;
+                duskFruitSpawningTimer.StartTimer();
+                duskPlantDurationTimer.StartTimer();
+                break;
+            case GameTimeState.NIGHT:
+                break;
+            case GameTimeState.EMPTY:
+                Debug.LogError("undefined gamestate");
+                break;
+            default:
+                Debug.LogError("undefined gamestate");
+                break;
         }
     }
 
-    private void SpawnFruit()
+    private void InitTimers()
+    {
+        dayFruitSpawningTimer.ResetTimer(daySpawnTime, false);
+        dayPlantDurationTimer.ResetTimer(dayDurationTime, false);
+
+        duskFruitSpawningTimer.ResetTimer(duskSpawnTime, false);
+        duskPlantDurationTimer.ResetTimer(duskDurationTime, false);
+    }
+
+    private void StopAllTimers()
+    {
+        dayFruitSpawningTimer.StopTimer();
+        dayPlantDurationTimer.StopTimer();
+        duskFruitSpawningTimer.StopTimer();
+        duskPlantDurationTimer.StopTimer();
+    }
+
+    public void SpawnFruit()
     {
         // hard code position
         Vector3 offset = new Vector3(Random.Range(-1.3f, 1.3f), Random.Range(-0.7f, 0.01f));
         var frt = Instantiate(fruitPrefab, transform.position + offset, Quaternion.identity);
         frt.Init(letterIndex);
+    }
+
+    public void Die()
+    {
+        gridMap.tiles[tile] = ' ';
+        Destroy(gameObject, 0.005f);
     }
 }
