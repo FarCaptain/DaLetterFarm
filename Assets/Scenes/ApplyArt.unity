@@ -4419,13 +4419,14 @@ GameObject:
   - component: {fileID: 1076560363}
   - component: {fileID: 1076560362}
   - component: {fileID: 1076560361}
+  - component: {fileID: 1076560364}
   m_Layer: 0
   m_Name: Firefly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &1076560361
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -4472,7 +4473,7 @@ ParticleSystemRenderer:
   m_MeshDistribution: 0
   m_SortMode: 0
   m_MinParticleSize: 0
-  m_MaxParticleSize: 0.5
+  m_MaxParticleSize: 0.2
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
@@ -4506,8 +4507,8 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076560360}
   serializedVersion: 8
-  lengthInSec: 5
-  simulationSpeed: 1
+  lengthInSec: 6.92
+  simulationSpeed: 0.2
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
@@ -4688,7 +4689,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 0.8443396, g: 1, b: 0.9604889, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 0.8958754, b: 0.24056602, a: 1}
@@ -4750,7 +4751,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.8
+      scalar: 1.25
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -5066,7 +5067,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 200
+    maxNumParticles: 20
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -5126,7 +5127,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 0
+    type: 5
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
@@ -5134,7 +5135,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 1, y: 1, z: 1}
+    m_Scale: {x: 8.08, y: 5.53, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -5213,7 +5214,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 5.36
+      value: 3.4
       mode: 0
       spread: 0
       speed:
@@ -8277,7 +8278,7 @@ ParticleSystem:
       properties: 0
       emitProbability: 1
   LightsModule:
-    enabled: 1
+    enabled: 0
     ratio: 0.52
     light: {fileID: 0}
     randomDistribution: 1
@@ -9215,11 +9216,24 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.2, y: 1.56, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1076560364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076560360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43fc2968e6d5da245b4922ae4dbdba6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Prefab: {fileID: 1167753172}
 --- !u!1 &1097977330
 GameObject:
   m_ObjectHideFlags: 0
@@ -9638,7 +9652,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1167753173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9646,7 +9660,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1167753172}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
@@ -9654,11 +9668,11 @@ MonoBehaviour:
   m_ComponentVersion: 1
   m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 0.9689055, b: 0.504717, a: 1}
-  m_Intensity: 0.00037747924
-  m_LightVolumeIntensity: 0.32
-  m_LightVolumeIntensityEnabled: 0
+  m_FalloffIntensity: 0.662
+  m_Color: {r: 0.990566, g: 0.96712947, b: 0.62144, a: 1}
+  m_Intensity: 0.91
+  m_LightVolumeIntensity: 0.09
+  m_LightVolumeIntensityEnabled: 1
   m_ApplyToSortingLayers: 000000009dafba057d1b646acbf1a42a5f9de2551bbed468
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
@@ -9706,8 +9720,8 @@ MonoBehaviour:
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 4.74
+  m_PointLightInnerRadius: 0.01
+  m_PointLightOuterRadius: 0.63
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -12659,7 +12673,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 83ac4e69605be8141a8ba3a6b5fc84de, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13021,7 +13035,7 @@ MonoBehaviour:
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 3.300938
-      value: 0.16859114
+      value: 0.24264205
       inSlope: -0.054322604
       outSlope: -0.054322604
       tangentMode: 0
@@ -13040,7 +13054,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  nightLight: {fileID: 1167753173}
   lightCurve:
     serializedVersion: 2
     m_Curve:
@@ -13081,8 +13094,8 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.123066075
     - serializedVersion: 3
-      time: 3.0315163
-      value: 0.55145866
+      time: 2.9650185
+      value: 0.7316268
       inSlope: 0.28886977
       outSlope: 0.28886977
       tangentMode: 0
@@ -13090,8 +13103,8 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.9546034
     - serializedVersion: 3
-      time: 3.315027
-      value: 0.70685285
+      time: 3.2285707
+      value: 0.9932024
       inSlope: 0.39746633
       outSlope: 0.39746633
       tangentMode: 0
@@ -13099,7 +13112,7 @@ MonoBehaviour:
       inWeight: 1
       outWeight: 1
     - serializedVersion: 3
-      time: 3.5167904
+      time: 3.536749
       value: 0.62751603
       inSlope: 0.049099274
       outSlope: 0.049099274

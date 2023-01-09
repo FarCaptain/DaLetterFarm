@@ -23,7 +23,7 @@ public class DayNightCycle : MonoBehaviour
     // project range to 0 ~ 360 -> 0 ~3.6 to make life easier
     [SerializeField] private AnimationCurve volumeCurve;
 
-    [SerializeField] private Light2D nightLight;
+    //[SerializeField] private Light2D nightLight;
     [SerializeField] private AnimationCurve lightCurve;
 
     private float accumulatedTime = 0f;
@@ -44,7 +44,7 @@ public class DayNightCycle : MonoBehaviour
         float ligthIntensity = volumeCurve.Evaluate(projectedAngle);
         volume.weight = 1f - ligthIntensity;
 
-        nightLight.intensity = lightCurve.Evaluate(projectedAngle);
+        //nightLight.intensity = lightCurve.Evaluate(projectedAngle);
 
         // init time state
         UpdateTimeState(angle);
@@ -79,7 +79,7 @@ public class DayNightCycle : MonoBehaviour
         float ligthIntensity = volumeCurve.Evaluate(projectedAngle);
         volume.weight = 1f - ligthIntensity;
 
-        nightLight.intensity = lightCurve.Evaluate(projectedAngle);
+        //nightLight.intensity = lightCurve.Evaluate(projectedAngle);
         //Debug.Log($"[Angles] {angle} => {projectedAngle}");
 
         UpdateTimeState(angle);
