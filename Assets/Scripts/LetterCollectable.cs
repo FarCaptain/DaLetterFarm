@@ -30,7 +30,9 @@ public class LetterCollectable : MonoBehaviour
 
     public void OnClicked()
     {
-        currentWord.SetWord(currentWord.GetWord() + letter);
+        // apply limit
+        if(currentWord.GetWord().Length < 15)
+            currentWord.SetWord(currentWord.GetWord() + letter);
         AudioManager.instance.Play("collectfruit");
         Destroy(gameObject);
     }
