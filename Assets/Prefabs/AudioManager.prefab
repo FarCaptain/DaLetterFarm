@@ -44,4 +44,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c880541413566f488f427ca0278b05c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: Theme
+    clip: {fileID: 8300000, guid: 47f45ef7b5767674393cc401fc325705, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: selectshovel
+    clip: {fileID: 8300000, guid: 52d7ec92aa781e24bb76ff8674f82cc9, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: selectseed
+    clip: {fileID: 8300000, guid: a51a86e1f0c71c64482773e36076f5c8, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: collectfruit
+    clip: {fileID: 8300000, guid: 2f0d65fd899433e40831ec2d76fa6c43, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: right
+    clip: {fileID: 8300000, guid: 4cd568b7f12d2cb4ab9552512e837ccd, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: wrong
+    clip: {fileID: 8300000, guid: 1a1b00ec8bb5089408c751b8cb4deebb, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
